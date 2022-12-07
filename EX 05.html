@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 05</title>
+</head>
+<body>
+   <script>
+    /* Faça um algoritmo que pergunte a distância que um passageiro
+deseja percorrer em Km. Calcule o preço da passagem, cobrando
+R$0.50 por Km para viagens até 200Km e R$0.45 para viagens mais
+longas. */
+ let Km = parseInt(prompt('Digite quantos km é a viagem: '))
+ if(Km<=200){
+    let valorFinal = Km*0.5
+    document.write(`O valor da passagem é R$${valorFinal} `)
+ } else{
+    let valorFinal = Km*0.45
+    document.write(`O valor da passagem é R$${valorFinal} `)
+    
+    
+ }
+
+   </script> 
+</body>
+</html>

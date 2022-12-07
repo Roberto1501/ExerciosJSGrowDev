@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 04</title>
+</head>
+<body>
+    <script>
+        /* Numa promoção exclusiva para o Dia da Mulher, uma loja quer dar
+descontos para todos, mas especialmente para mulheres. Faça um
+programa que leia nome, sexo e o valor das compras do cliente e
+calcule o preço com desconto. Sabendo que:
+a. Homens ganham 5% de desconto
+
+b. Mulheres ganham 13% de desconto*/
+
+let nome = prompt('Digite o nome do cliente: ')
+let sexo = prompt('Digite o sexo: ')
+let valorCompra = parseFloat(prompt('Digite o valor da compra: '))
+if(sexo== 'masculino'){
+    valorCompra = valorCompra-(valorCompra/100*5)
+    document.write(`Olá ${nome} o preço final da sua compra é ${valorCompra} `)
+}else{
+    valorCompra = valorCompra-(valorCompra/100*13)
+    document.write(`Olá ${nome} o preço final da sua compra é ${valorCompra} `)
+
+}
+    </script>
+</body>
+</html>

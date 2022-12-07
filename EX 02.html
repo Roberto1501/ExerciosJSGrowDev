@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX 02</title>
+</head>
+
+<body>
+    <script>
+      let salario = 0;
+let salarioHomem = 0;
+let salarioMulher = 0;
+let respostaPergunta = 's';
+let sexo = '';
+
+while( respostaPergunta === 's'){
+
+    sexo = prompt('Qual seu sexo: [M/F]');
+    sexo.toLowerCase();
+
+    if( sexo === 'm' || sexo === 'M' ){
+
+        salario = Number.parseFloat(prompt('Digite seu salario'));
+        
+        salarioHomem += salario;
+
+    }else if( sexo === 'f' || sexo === 'F' ){
+
+        salario = Number.parseFloat(prompt('Digite seu salario'));
+        salarioMulher += salario;
+    }else{
+        alert('Operaçao invalida, por favor repita!');
+    }
+
+    respostaPergunta = prompt("Deseja continuar? [S/N]");
+    respostaPergunta.toLowerCase();
+
+}
+
+
+document.write(`Salarito total dos homens foi de: R$${salarioHomem} <br>`);
+document.write(`Salario total das mulheres foi de: R$${salarioMulher}`);
+
+    </script>
+</body>
+
+</html>
